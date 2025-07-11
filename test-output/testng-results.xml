@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-11T12:04:22 IST" name="Suite" finished-at="2025-07-11T12:06:00 IST" duration-ms="97913">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases.loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@101639ae]" name="loginWithSeleniumAndGetCookie" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getLocalizationValid()[pri:1, instance:testcases.RestAssured_TestCases@101639ae]" name="getLocalizationValid" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getActiveLanguages()[pri:2, instance:testcases.RestAssured_TestCases@101639ae]" name="getActiveLanguages" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getDashboardShortcuts()[pri:3, instance:testcases.RestAssured_TestCases@101639ae]" name="getDashboardShortcuts" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAuthProviders()[pri:4, instance:testcases.RestAssured_TestCases@101639ae]" name="getAuthProviders" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAdminOAuthList()[pri:5, instance:testcases.RestAssured_TestCases@101639ae]" name="getAdminOAuthList" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getEmployeeList()[pri:6, instance:testcases.RestAssured_TestCases@101639ae]" name="getEmployeeList" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.putLanguagePackage()[pri:7, instance:testcases.RestAssured_TestCases@101639ae]" name="putLanguagePackage" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.deleteLangById()[pri:8, instance:testcases.RestAssured_TestCases@101639ae]" name="deleteLangById" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.putModulesSettings()[pri:9, instance:testcases.RestAssured_TestCases@101639ae]" name="putModulesSettings" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.postOpenIdProvide()[pri:10, instance:testcases.RestAssured_TestCases@101639ae]" name="postOpenIdProvide" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2025-07-11T12:04:22 IST" name="Test" finished-at="2025-07-11T12:06:00 IST" duration-ms="97913">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:04:23 IST" name="loginWithSeleniumAndGetCookie" description="Login to the application using Selenium and retrieve the cookie." finished-at="2025-07-11T12:05:15 IST" duration-ms="52557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSeleniumAndGetCookie -->
+        <test-method signature="getLocalizationValid()[pri:1, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:18 IST" name="getLocalizationValid" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/localization&#039; endpoint using a valid authentication cookie
+2. Verify that the response is parsed into a CustomResponse object with language and dateFormat fields extracted from the &#039;data&#039; section
+3. Assert that both &#039;language&#039; and &#039;dateFormat&#039; fields are not null and not empty
+4. Validate that the test method implementation uses required RestAssured keywords using the TestCodeValidator
+5. Assert that the response status code is 200 (OK) and all required fields are present as per validation logic" finished-at="2025-07-11T12:05:33 IST" duration-ms="14723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocalizationValid -->
+        <test-method signature="getActiveLanguages()[pri:2, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:33 IST" name="getActiveLanguages" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/i18n/languages?limit=50&amp;offset=0&amp;sortOrder=ASC&amp;activeOnly=true&#039; endpoint using a valid cookie
+2. Parse the response using a CustomResponse object, extracting &#039;id&#039;, &#039;name&#039;, and &#039;code&#039; fields from each entry in the &#039;data&#039; array
+3. Print the customResponse status code, body, and extracted language fields for debugging
+4. Assert that the extracted lists of IDs, names, and codes are not empty and contain no null entries
+5. Validate that the method is implemented using required RestAssured calls using TestCodeValidator
+6. Assert that the response contains all expected fields and the status code is 200 (OK)" finished-at="2025-07-11T12:05:35 IST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActiveLanguages -->
+        <test-method signature="getDashboardShortcuts()[pri:3, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:35 IST" name="getDashboardShortcuts" description="1. Send a GET request to the &#039;/web/index.php/api/v2/dashboard/shortcuts&#039; endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract relevant shortcut fields like leave.assign_leave, leave.leave_list, etc.
+3. Print the customResponse status code, response body, and extracted fields for verification
+4. Assert that all extracted lists are not empty and contain expected shortcut information
+5. Assert that the customResponse status code is 200 (OK)" finished-at="2025-07-11T12:05:36 IST" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDashboardShortcuts -->
+        <test-method signature="getAuthProviders()[pri:4, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:37 IST" name="getAuthProviders" description="1. Create a new OpenID provider using POST to ensure data exists for validation
+2. Send a GET request to the &#039;/web/index.php/api/v2/auth/openid-providers?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+3. Parse the response using CustomResponse to extract fields like id, providerName, providerUrl, status, and clientId
+4. Print the status code, response body, and all extracted fields for verification
+5. Assert that none of the extracted lists are empty or contain null values
+6. Assert that the customResponse status code is 200 (OK)" finished-at="2025-07-11T12:05:39 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthProviders -->
+        <test-method signature="getAdminOAuthList()[pri:5, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:39 IST" name="getAdminOAuthList" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/oauth-clients?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract id, name, adminId, redirectUri, enabled, and confidential fields
+3. Print the status code, response body, and extracted fields
+4. Assert that all extracted lists are non-empty and contain non-null values
+5. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T12:05:41 IST" duration-ms="1585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdminOAuthList -->
+        <test-method signature="getEmployeeList()[pri:6, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:41 IST" name="getEmployeeList" description="1. Send a GET request to &#039;/web/index.php/api/v2/pim/employees?limit=50&amp;offset=0&amp;model=detailed&amp;includeEmployees=onlyCurrent&amp;sortField=employee.firstName&amp;sortOrder=ASC&#039; with a valid cookie
+2. Extract fields like empNumber, firstName, and lastName from the response
+3. Print status code, response body, and extracted employee details
+4. Assert that the lists are not empty and contain non-null values
+5. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T12:05:43 IST" duration-ms="1774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeList -->
+        <test-method signature="putLanguagePackage()[pri:7, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:44 IST" name="putLanguagePackage" description="1. Fetch a language package ID not present in the current list (less than 450)
+2. Send a PUT request to &#039;/web/index.php/api/v2/admin/i18n/languages/{lang_package_id}&#039; with valid cookie and body
+3. Print the language ID used, status code, and full response body
+4. Assert that the response status code is 200 (OK) and key fields (id, name, code) are non-empty" finished-at="2025-07-11T12:05:46 IST" duration-ms="2233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putLanguagePackage -->
+        <test-method signature="deleteLangById()[pri:8, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:46 IST" name="deleteLangById" description="1. Fetch the first available language ID to delete and construct the request body
+2. Send a DELETE request to the &#039;/web/index.php/api/v2/admin/i18n/languages&#039; endpoint with valid cookie and request body
+3. Print the request body, status code, and response body for debugging
+4. Assert that the response status code is 200 (OK) and implementation is correct" finished-at="2025-07-11T12:05:51 IST" duration-ms="4553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLangById -->
+        <test-method signature="putModulesSettings()[pri:9, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:51 IST" name="putModulesSettings" description="1. Create a request body with boolean values representing module states
+2. Send a PUT request to the &#039;/web/index.php/api/v2/admin/modules&#039; endpoint with a valid cookie and request body
+3. Print the request body, status code, and response body for verification
+4. Assert that the response status code is 200 (OK) and implementation is correct" finished-at="2025-07-11T12:05:58 IST" duration-ms="7468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putModulesSettings -->
+        <test-method signature="postOpenIdProvide()[pri:10, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T12:05:59 IST" name="postOpenIdProvide" description="1. Create a request body with required fields: {name, url, clientId, clientSecret} and use a unique name
+2. Send a POST request to &#039;/web/index.php/api/v2/auth/openid-providers&#039; with a valid cookie and request body
+3. Print the request body, response status code, and body for debugging
+4. Assert that the status code is 200 and response contains expected fields" finished-at="2025-07-11T12:06:00 IST" duration-ms="1162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postOpenIdProvide -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

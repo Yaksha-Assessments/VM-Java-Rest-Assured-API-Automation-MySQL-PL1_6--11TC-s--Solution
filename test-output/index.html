@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Ameet Khemani\Downloads\New folder\New folder\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="deleteLangById">deleteLangById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getActiveLanguages">getActiveLanguages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAdminOAuthList">getAdminOAuthList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAuthProviders">getAuthProviders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getDashboardShortcuts">getDashboardShortcuts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getEmployeeList">getEmployeeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getLocalizationValid">getLocalizationValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="loginWithSeleniumAndGetCookie">loginWithSeleniumAndGetCookie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="postOpenIdProvide">postOpenIdProvide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="putLanguagePackage">putLanguagePackage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="putModulesSettings">putModulesSettings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.RestAssured_TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteLangById">
+                  </a> <!-- deleteLangById -->
+                  <span class="method-name">deleteLangById</span>
+                  <em>
+(1. Fetch the first available language ID to delete and construct the request body
+2. Send a DELETE request to the '/web/index.php/api/v2/admin/i18n/languages' endpoint with valid cookie and request body
+3. Print the request body, status code, and response body for debugging
+4. Assert that the response status code is 200 (OK) and implementation is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getActiveLanguages">
+                  </a> <!-- getActiveLanguages -->
+                  <span class="method-name">getActiveLanguages</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/i18n/languages?limit=50&offset=0&sortOrder=ASC&activeOnly=true' endpoint using a valid cookie
+2. Parse the response using a CustomResponse object, extracting 'id', 'name', and 'code' fields from each entry in the 'data' array
+3. Print the customResponse status code, body, and extracted language fields for debugging
+4. Assert that the extracted lists of IDs, names, and codes are not empty and contain no null entries
+5. Validate that the method is implemented using required RestAssured calls using TestCodeValidator
+6. Assert that the response contains all expected fields and the status code is 200 (OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdminOAuthList">
+                  </a> <!-- getAdminOAuthList -->
+                  <span class="method-name">getAdminOAuthList</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/oauth-clients?limit=50&offset=0' endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract id, name, adminId, redirectUri, enabled, and confidential fields
+3. Print the status code, response body, and extracted fields
+4. Assert that all extracted lists are non-empty and contain non-null values
+5. Assert that the response status code is 200 (OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthProviders">
+                  </a> <!-- getAuthProviders -->
+                  <span class="method-name">getAuthProviders</span>
+                  <em>
+(1. Create a new OpenID provider using POST to ensure data exists for validation
+2. Send a GET request to the '/web/index.php/api/v2/auth/openid-providers?limit=50&offset=0' endpoint with a valid cookie
+3. Parse the response using CustomResponse to extract fields like id, providerName, providerUrl, status, and clientId
+4. Print the status code, response body, and all extracted fields for verification
+5. Assert that none of the extracted lists are empty or contain null values
+6. Assert that the customResponse status code is 200 (OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDashboardShortcuts">
+                  </a> <!-- getDashboardShortcuts -->
+                  <span class="method-name">getDashboardShortcuts</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/dashboard/shortcuts' endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract relevant shortcut fields like leave.assign_leave, leave.leave_list, etc.
+3. Print the customResponse status code, response body, and extracted fields for verification
+4. Assert that all extracted lists are not empty and contain expected shortcut information
+5. Assert that the customResponse status code is 200 (OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployeeList">
+                  </a> <!-- getEmployeeList -->
+                  <span class="method-name">getEmployeeList</span>
+                  <em>
+(1. Send a GET request to '/web/index.php/api/v2/pim/employees?limit=50&offset=0&model=detailed&includeEmployees=onlyCurrent&sortField=employee.firstName&sortOrder=ASC' with a valid cookie
+2. Extract fields like empNumber, firstName, and lastName from the response
+3. Print status code, response body, and extracted employee details
+4. Assert that the lists are not empty and contain non-null values
+5. Assert that the response status code is 200 (OK))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocalizationValid">
+                  </a> <!-- getLocalizationValid -->
+                  <span class="method-name">getLocalizationValid</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/localization' endpoint using a valid authentication cookie
+2. Verify that the response is parsed into a CustomResponse object with language and dateFormat fields extracted from the 'data' section
+3. Assert that both 'language' and 'dateFormat' fields are not null and not empty
+4. Validate that the test method implementation uses required RestAssured keywords using the TestCodeValidator
+5. Assert that the response status code is 200 (OK) and all required fields are present as per validation logic)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithSeleniumAndGetCookie">
+                  </a> <!-- loginWithSeleniumAndGetCookie -->
+                  <span class="method-name">loginWithSeleniumAndGetCookie</span>
+                  <em>
+(Login to the application using Selenium and retrieve the cookie.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postOpenIdProvide">
+                  </a> <!-- postOpenIdProvide -->
+                  <span class="method-name">postOpenIdProvide</span>
+                  <em>
+(1. Create a request body with required fields: {name, url, clientId, clientSecret} and use a unique name
+2. Send a POST request to '/web/index.php/api/v2/auth/openid-providers' with a valid cookie and request body
+3. Print the request body, response status code, and body for debugging
+4. Assert that the status code is 200 and response contains expected fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putLanguagePackage">
+                  </a> <!-- putLanguagePackage -->
+                  <span class="method-name">putLanguagePackage</span>
+                  <em>
+(1. Fetch a language package ID not present in the current list (less than 450)
+2. Send a PUT request to '/web/index.php/api/v2/admin/i18n/languages/{lang_package_id}' with valid cookie and body
+3. Print the language ID used, status code, and full response body
+4. Assert that the response status code is 200 (OK) and key fields (id, name, code) are non-empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putModulesSettings">
+                  </a> <!-- putModulesSettings -->
+                  <span class="method-name">putModulesSettings</span>
+                  <em>
+(1. Create a request body with boolean values representing module states
+2. Send a PUT request to the '/web/index.php/api/v2/admin/modules' endpoint with a valid cookie and request body
+3. Print the request body, status code, and response body for verification
+4. Assert that the response status code is 200 (OK) and implementation is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Ameet Khemani\Downloads\New folder\New folder\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;PL1&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;PL1&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;dev&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.RestAssured_TestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">PL1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteLangById</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getActiveLanguages</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAdminOAuthList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAuthProviders</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDashboardShortcuts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getEmployeeList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getLocalizationValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithSeleniumAndGetCookie</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">postOpenIdProvide</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">putLanguagePackage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">putModulesSettings</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithSeleniumAndGetCookie')
+data.setCell(0, 2, 'testcases.RestAssured_TestCases')
+data.setCell(0, 3, 52557);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getLocalizationValid')
+data.setCell(1, 2, 'testcases.RestAssured_TestCases')
+data.setCell(1, 3, 14723);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'putModulesSettings')
+data.setCell(2, 2, 'testcases.RestAssured_TestCases')
+data.setCell(2, 3, 7468);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteLangById')
+data.setCell(3, 2, 'testcases.RestAssured_TestCases')
+data.setCell(3, 3, 4553);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getAuthProviders')
+data.setCell(4, 2, 'testcases.RestAssured_TestCases')
+data.setCell(4, 3, 2459);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'putLanguagePackage')
+data.setCell(5, 2, 'testcases.RestAssured_TestCases')
+data.setCell(5, 3, 2233);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getEmployeeList')
+data.setCell(6, 2, 'testcases.RestAssured_TestCases')
+data.setCell(6, 3, 1774);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getActiveLanguages')
+data.setCell(7, 2, 'testcases.RestAssured_TestCases')
+data.setCell(7, 3, 1595);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getAdminOAuthList')
+data.setCell(8, 2, 'testcases.RestAssured_TestCases')
+data.setCell(8, 3, 1585);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getDashboardShortcuts')
+data.setCell(9, 2, 'testcases.RestAssured_TestCases')
+data.setCell(9, 3, 1245);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'postOpenIdProvide')
+data.setCell(10, 2, 'testcases.RestAssured_TestCases')
+data.setCell(10, 3, 1162);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.RestAssured_TestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithSeleniumAndGetCookie</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getLocalizationValid</span>
+                <span class="method-start">55690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getActiveLanguages</span>
+                <span class="method-start">70717 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getDashboardShortcuts</span>
+                <span class="method-start">72574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAuthProviders</span>
+                <span class="method-start">73998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdminOAuthList</span>
+                <span class="method-start">76655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployeeList</span>
+                <span class="method-start">78587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">putLanguagePackage</span>
+                <span class="method-start">80966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteLangById</span>
+                <span class="method-start">83616 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">putModulesSettings</span>
+                <span class="method-start">88355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postOpenIdProvide</span>
+                <span class="method-start">96294 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

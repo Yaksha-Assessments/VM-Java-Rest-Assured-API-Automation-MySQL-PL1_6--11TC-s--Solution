@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 11 12:04:22 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>97 seconds (97913 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>PL1 </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAdminOAuthList()'><b>getAdminOAuthList</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/oauth-clients?limit=50&offset=0' endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract id, name, adminId, redirectUri, enabled, and confidential fields
+3. Print the status code, response body, and extracted fields
+4. Assert that all extracted lists are non-empty and contain non-null values
+5. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getActiveLanguages()'><b>getActiveLanguages</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/i18n/languages?limit=50&offset=0&sortOrder=ASC&activeOnly=true' endpoint using a valid cookie
+2. Parse the response using a CustomResponse object, extracting 'id', 'name', and 'code' fields from each entry in the 'data' array
+3. Print the customResponse status code, body, and extracted language fields for debugging
+4. Assert that the extracted lists of IDs, names, and codes are not empty and contain no null entries
+5. Validate that the method is implemented using required RestAssured calls using TestCodeValidator
+6. Assert that the response contains all expected fields and the status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.putLanguagePackage()'><b>putLanguagePackage</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Fetch a language package ID not present in the current list (less than 450)
+2. Send a PUT request to '/web/index.php/api/v2/admin/i18n/languages/{lang_package_id}' with valid cookie and body
+3. Print the language ID used, status code, and full response body
+4. Assert that the response status code is 200 (OK) and key fields (id, name, code) are non-empty</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.putModulesSettings()'><b>putModulesSettings</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Create a request body with boolean values representing module states
+2. Send a PUT request to the '/web/index.php/api/v2/admin/modules' endpoint with a valid cookie and request body
+3. Print the request body, status code, and response body for verification
+4. Assert that the response status code is 200 (OK) and implementation is correct</td>
+<td></td>
+<td>7</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getLocalizationValid()'><b>getLocalizationValid</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/localization' endpoint using a valid authentication cookie
+2. Verify that the response is parsed into a CustomResponse object with language and dateFormat fields extracted from the 'data' section
+3. Assert that both 'language' and 'dateFormat' fields are not null and not empty
+4. Validate that the test method implementation uses required RestAssured keywords using the TestCodeValidator
+5. Assert that the response status code is 200 (OK) and all required fields are present as per validation logic</td>
+<td></td>
+<td>14</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.postOpenIdProvide()'><b>postOpenIdProvide</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Create a request body with required fields: {name, url, clientId, clientSecret} and use a unique name
+2. Send a POST request to '/web/index.php/api/v2/auth/openid-providers' with a valid cookie and request body
+3. Print the request body, response status code, and body for debugging
+4. Assert that the status code is 200 and response contains expected fields</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie()'><b>loginWithSeleniumAndGetCookie</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: Login to the application using Selenium and retrieve the cookie.</td>
+<td></td>
+<td>52</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getDashboardShortcuts()'><b>getDashboardShortcuts</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/dashboard/shortcuts' endpoint with a valid cookie
+2. Parse the response using CustomResponse to extract relevant shortcut fields like leave.assign_leave, leave.leave_list, etc.
+3. Print the customResponse status code, response body, and extracted fields for verification
+4. Assert that all extracted lists are not empty and contain expected shortcut information
+5. Assert that the customResponse status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAuthProviders()'><b>getAuthProviders</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Create a new OpenID provider using POST to ensure data exists for validation
+2. Send a GET request to the '/web/index.php/api/v2/auth/openid-providers?limit=50&offset=0' endpoint with a valid cookie
+3. Parse the response using CustomResponse to extract fields like id, providerName, providerUrl, status, and clientId
+4. Print the status code, response body, and all extracted fields for verification
+5. Assert that none of the extracted lists are empty or contain null values
+6. Assert that the customResponse status code is 200 (OK)</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getEmployeeList()'><b>getEmployeeList</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to '/web/index.php/api/v2/pim/employees?limit=50&offset=0&model=detailed&includeEmployees=onlyCurrent&sortField=employee.firstName&sortOrder=ASC' with a valid cookie
+2. Extract fields like empNumber, firstName, and lastName from the response
+3. Print status code, response body, and extracted employee details
+4. Assert that the lists are not empty and contain non-null values
+5. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.deleteLangById()'><b>deleteLangById</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Fetch the first available language ID to delete and construct the request body
+2. Send a DELETE request to the '/web/index.php/api/v2/admin/i18n/languages' endpoint with valid cookie and request body
+3. Print the request body, status code, and response body for debugging
+4. Assert that the response status code is 200 (OK) and implementation is correct</td>
+<td></td>
+<td>4</td>
+<td>testcases.RestAssured_TestCases@101639ae</td></tr>
+</table><p>
+</body>
+</html>
